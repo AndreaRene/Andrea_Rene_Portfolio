@@ -3,7 +3,6 @@
     --lightBlue: #C6DDE2;
     --pink: #F43D70;
     --green: #B5D3AE;
-
 }
 
 body {
@@ -46,7 +45,6 @@ body {
     color: var(--lightBlue);
 }
 
-/* 
 .navClick:hover {
     color: var(--green);
     text-decoration: underline;
@@ -54,7 +52,7 @@ body {
     text-decoration-thickness: .2rem;
     text-decoration-color: var(--pink);
     font-weight: bolder;
-} */
+}
 
 #aboutMe {
     display: flex;
@@ -97,7 +95,7 @@ body {
 #aboutMe img {
     width: 15%;
     border-radius: 50%;
-    border: .5em solid var(--mainBlue);
+    border: .2em solid var(--mainBlue);
 }
 
 section {
@@ -230,29 +228,13 @@ footer a {
     font-weight: bolder;
 }
 
-@media (min-width: 769px) {
-    .navClick:hover {
-        color: var(--green);
-        text-decoration: underline;
-        text-underline-position: under;
-        text-decoration-thickness: .2rem;
-        text-decoration-color: var(--pink);
-        font-weight: bolder;
-    }
-}
+@media (min-width: 769px) {}
 
 @media (max-width: 1200px) {}
 
 @media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
-    /* #nameLogo p:first-of-type {
-        font-size: 1.5em;
-    } */
-
-}
-
-@media (max-width: 480px) {
 
     #topNav {
         flex-direction: column;
@@ -270,7 +252,53 @@ footer a {
     }
 
     #aboutMe {
-        padding: 6rem .5rem .5rem;
+        padding: 1rem;
+        padding: 6rem 3rem .5rem;
+    }
+
+    #aboutMe h1 {
+        font-size: 1.4rem;
+    }
+
+    #aboutMe h2 {
+        font-size: 1rem;
+
+    }
+
+    #aboutMe p {
+        font-size: .7rem;
+    }
+
+    #aboutMe img {
+        width: 30%;
+    }
+
+    .mainWork figure,
+    .mainWork p {
+        width: 45%;
+    }
+
+    .workGrid figure,
+    .workGrid p {
+        width: 40%;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact img,
+    #contact li {
+        /* display: block; */
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    #aboutMe {
+
         flex-direction: column;
     }
 
@@ -279,7 +307,7 @@ footer a {
     }
 
     #aboutMe h2 {
-        font-size: 1rem;
+        font-size: .9rem;
         align-self: flex-end;
     }
 
@@ -334,5 +362,11 @@ footer a {
     footer p {
         font-size: 1.2rem;
         line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    #aboutMe {
+        padding: 6rem 1rem .5rem;
     }
 }
