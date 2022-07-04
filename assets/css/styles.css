@@ -260,12 +260,23 @@ footer a {
     }
 
     #aboutMe {
-        padding-top: 6em;
+        padding: 6rem .5rem .5rem;
+        flex-direction: column;
     }
 
-    #aboutMe h1,
-    #aboutMe h2 {
+    #aboutMe h1 {
         font-size: 1.5rem;
+    }
+
+    #aboutMe h2 {
+        font-size: .9rem;
+        align-self: flex-end;
+    }
+
+    #aboutMe img {
+        align-self: center;
+        width: 50%;
+        border: .2em solid var(--mainBlue)
     }
 
     #aboutMe p {
@@ -303,7 +314,7 @@ footer a {
 
     #contact li {
         display: inline-block;
-        margin: 0;
+        margin: .5em -.25em;
     }
 
     footer {
