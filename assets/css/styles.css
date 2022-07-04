@@ -11,7 +11,7 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
-nav {
+#topNav {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -28,11 +28,11 @@ nav {
 #nameLogo p:first-of-type {
     font-size: 2rem;
     font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
     text-shadow: -.05em -.05em var(--pink);
-    letter-spacing: .2em;
 }
 
-nav p {
+#topNav p {
     text-align: center;
 }
 
@@ -64,9 +64,9 @@ nav p {
     color: var(--mainBlue);
 }
 
-#aboutMe p,
-h1,
-h2 {
+#aboutMe h1,
+#aboutMe h2,
+#aboutMe p {
     width: 30%;
     height: auto;
     white-space: nowrap;
@@ -76,8 +76,15 @@ h2 {
     font-size: 3em;
 }
 
+
 #aboutMe h2 {
     font-size: 2em;
+    text-align: right;
+    width: 50%;
+}
+
+#aboutMe p:first-of-type {
+    white-space: normal;
     text-align: right;
 }
 
@@ -91,9 +98,8 @@ h2 {
     border: .5em solid var(--mainBlue);
 }
 
-.pink {
-    color: var(--pink);
-    font-weight: bolder;
+section {
+    padding: 3em .5em;
 }
 
 .mainWork {
@@ -119,9 +125,9 @@ h2 {
 
 .mainWork figcaption {
     position: absolute;
-    bottom: -1.3em;
-    left: 1.5em;
-    width: 90%;
+    bottom: 1em;
+    /* left: 1.5em; */
+    width: 70%;
     padding: .5em 1em;
     background-color: var(--lightBlue);
     color: var(--mainBlue);
@@ -129,29 +135,29 @@ h2 {
     font-size: 1.5em;
 }
 
-.smallWork {
+.workGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.smallWork figure,
-.smallWork p {
+.workGrid figure,
+.workGrid p {
     width: 22%;
     padding: 1em;
     color: var(--mainBlue)
 }
 
-.smallWork img {
+.workGrid img {
     width: 100%;
 }
 
-.smallWork figure {
+.workGrid figure {
     position: relative;
 }
 
-.smallWork figcaption {
+.workGrid figcaption {
     position: absolute;
     top: 1em;
     width: 70%;
@@ -181,7 +187,6 @@ h2 {
     width: auto;
     height: 1em;
     margin-right: .5em;
-
 }
 
 #contact ul {
@@ -213,16 +218,31 @@ footer {
     color: var(--lightBlue);
 }
 
-section {
-    padding: 3em .5em;
+footer a {
+    text-decoration: none;
+    color: var(--green);
 }
 
+.pink {
+    color: var(--pink);
+    font-weight: bolder;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1024px) {}
+
 @media (max-width: 768px) {
+    #nameLogo p:first-of-type {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 480px) {
     nav {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        justify-content: space-between;
     }
 
     .navLink {
@@ -239,7 +259,59 @@ section {
         margin: 1em auto .5em;
     }
 
+    #aboutMe {
+        padding-top: 6em;
+    }
+
+    #aboutMe h1,
+    #aboutMe h2 {
+        font-size: 1.5rem;
+    }
+
     #aboutMe p {
         display: none;
+    }
+
+    .mainWork {
+        flex-direction: column;
+    }
+
+    .workGrid {
+        flex-direction: column;
+    }
+
+    .workGrid figure,
+    .workGrid p,
+    .mainWork figure,
+    .mainWork p {
+        width: 90%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .workGrid p {
+        display: none;
+    }
+
+    #contact h2 {
+        font-size: 1rem;
+    }
+
+    #contact a {
+        display: none;
+    }
+
+    #contact li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
