@@ -22,7 +22,6 @@ nav {
     padding: 1rem;
     background-color: var(--mainBlue);
     color: var(--lightBlue);
-    font-weight: bold;
     z-index: 1;
 }
 
@@ -48,7 +47,7 @@ nav ul {
 
 .navClick {
     text-decoration: none;
-    color: var(--darkMelon);
+    color: var(--lightBlue);
 }
 
 .navClick:hover {
@@ -57,6 +56,7 @@ nav ul {
     text-underline-position: under;
     text-decoration-thickness: .2rem;
     text-decoration-color: var(--pink);
+    font-weight: bolder;
 }
 
 #aboutMe {
@@ -102,7 +102,7 @@ img {
 
 .mainWork {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--mainBlue);
     color: var(--lightBlue)
@@ -111,7 +111,6 @@ img {
 .mainWork figure,
 .mainWork p {
     width: 40%;
-    padding: 3em;
 }
 
 .mainWork img {
@@ -124,12 +123,14 @@ img {
 
 .mainWork figcaption {
     position: absolute;
-    bottom: 2rem;
-    width: 70%;
-    padding: .5rem 1rem;
+    bottom: -1.3em;
+    left: 1.5em;
+    width: 90%;
+    padding: .5em 1em;
     background-color: var(--lightBlue);
     color: var(--mainBlue);
     text-align: center;
+    font-size: 1.5em;
 }
 
 .smallWork {
@@ -166,8 +167,8 @@ img {
 
 #contact {
     background-color: var(--mainBlue);
-    padding: 1em;
-    font-size: 3rem;
+    padding: 2em;
+
 }
 
 #contact h2 {
@@ -175,22 +176,38 @@ img {
     color: var(--mainBlue);
     padding: 1em;
     width: 80%;
-    margin: 2em auto;
+    margin: 1em auto;
     font-size: 3rem;
     text-align: center;
 }
 
 #contact img {
     width: auto;
-    height: 2em;
-    margin: 1em;
+    height: 1em;
+    margin-right: .5em;
+
+}
+
+#contact ul {
+    text-align: center;
+}
+
+#contact li {
+    margin: 1.5em;
+    font-size: 3em;
 }
 
 #contact li a {
-    vertical-align: middle;
+    text-decoration: none;
+    color: var(--lightBlue);
+    margin-bottom: 1rem;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--pink);
     text-align: center;
     font-size: 3rem;
