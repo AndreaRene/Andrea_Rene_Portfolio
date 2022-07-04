@@ -36,10 +36,6 @@ nav p {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
 .navLink {
     display: inline-block;
     padding: .8rem .5rem;
@@ -64,16 +60,16 @@ nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 5rem;
-    padding: 2em;
+    padding: 4em;
     color: var(--mainBlue);
 }
 
 #aboutMe p,
 h1,
-h2,
-img {
+h2 {
     width: 30%;
     height: auto;
+    white-space: nowrap;
 }
 
 #aboutMe h1 {
@@ -90,7 +86,7 @@ img {
 }
 
 #aboutMe img {
-
+    width: 15%;
     border-radius: 50%;
     border: .5em solid var(--mainBlue);
 }
