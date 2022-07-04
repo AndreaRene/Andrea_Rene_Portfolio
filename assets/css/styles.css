@@ -1,0 +1,232 @@
+:root {
+    --mainBlue: #30A7C1;
+    --lightBlue: #C6DDE2;
+    --pink: #F43D70;
+    --green: #B5D3AE;
+
+}
+
+body {
+    background-color: var(--lightBlue);
+    font-family: 'Comfortaa', cursive;
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem;
+    background-color: var(--mainBlue);
+    color: var(--lightBlue);
+    font-weight: bold;
+    z-index: 1;
+}
+
+#nameLogo p:first-of-type {
+    font-size: 2rem;
+    font-family: 'Nothing You Could Do', cursive;
+    text-shadow: -.05em -.05em var(--pink);
+    letter-spacing: .2em;
+}
+
+nav p {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.navLink {
+    display: inline-block;
+    padding: .8rem .5rem;
+}
+
+.navClick {
+    text-decoration: none;
+    color: var(--darkMelon);
+}
+
+.navClick:hover {
+    color: var(--green);
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: .2rem;
+    text-decoration-color: var(--pink);
+}
+
+#aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 2em;
+    color: var(--mainBlue);
+}
+
+#aboutMe p,
+h1,
+h2,
+img {
+    width: 30%;
+    height: auto;
+}
+
+#aboutMe h1 {
+    font-size: 3em;
+}
+
+#aboutMe h2 {
+    font-size: 2em;
+    text-align: right;
+}
+
+#aboutMe p {
+    font-size: 1.5em;
+}
+
+#aboutMe img {
+
+    border-radius: 50%;
+    border: .5em solid var(--mainBlue);
+}
+
+.pink {
+    color: var(--pink);
+    font-weight: bolder;
+}
+
+.mainWork {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainBlue);
+    color: var(--lightBlue)
+}
+
+.mainWork figure,
+.mainWork p {
+    width: 40%;
+    padding: 3em;
+}
+
+.mainWork img {
+    width: 100%;
+}
+
+.mainWork figure {
+    position: relative;
+}
+
+.mainWork figcaption {
+    position: absolute;
+    bottom: 2rem;
+    width: 70%;
+    padding: .5rem 1rem;
+    background-color: var(--lightBlue);
+    color: var(--mainBlue);
+    text-align: center;
+}
+
+.smallWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.smallWork figure,
+.smallWork p {
+    width: 22%;
+    padding: 1em;
+    color: var(--mainBlue)
+}
+
+.smallWork img {
+    width: 100%;
+}
+
+.smallWork figure {
+    position: relative;
+}
+
+.smallWork figcaption {
+    position: absolute;
+    top: 1em;
+    width: 70%;
+    padding: .5em 1em;
+    background-color: var(--mainBlue);
+    color: var(--lightBlue);
+    text-align: center;
+}
+
+#contact {
+    background-color: var(--mainBlue);
+    padding: 1em;
+    font-size: 3rem;
+}
+
+#contact h2 {
+    background-color: var(--lightBlue);
+    color: var(--mainBlue);
+    padding: 1em;
+    width: 80%;
+    margin: 2em auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#contact img {
+    width: auto;
+    height: 2em;
+    margin: 1em;
+}
+
+#contact li a {
+    vertical-align: middle;
+}
+
+footer {
+    background-color: var(--pink);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 5rem;
+    line-height: 1.5em;
+    color: var(--lightBlue);
+}
+
+section {
+    padding: 3em .5em;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .navLink {
+        display: block;
+        padding: .2em .5em;
+    }
+
+    .navLink:nth-of-type(odd) {
+        background-color: var(--lightBlue);
+        color: var(--mainBlue);
+    }
+
+    nav ul {
+        margin: 1em auto .5em;
+    }
+
+    #aboutMe p {
+        display: none;
+    }
+}
