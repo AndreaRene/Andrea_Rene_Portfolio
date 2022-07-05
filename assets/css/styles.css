@@ -25,7 +25,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-content: center;
     padding: 1rem;
     background-color: var(--mainBlue);
     color: var(--lightBlue);
@@ -146,6 +145,8 @@ body {
     width: 100%;
 }
 
+/* TODO: figure out positioning title bars */
+
 .mainWork figure {
     position: relative;
 }
@@ -187,7 +188,7 @@ body {
 .workGrid figcaption {
     position: absolute;
     top: 1em;
-    width: 70%;
+    width: 60%;
     padding: .5em 1em;
     background-color: var(--mainBlue);
     color: var(--lightBlue);
@@ -481,40 +482,6 @@ body {
         order: 8;
     }
 
-    /* Save in commit for future use. remove before deployment */
-
-    /* .box9 {
-        order: 9;
-    }
-
-    .box10 {
-        order: 10;
-    }
-
-    .box11 {
-        order: 12;
-    }
-
-    .box12 {
-        order: 11;
-    }
-
-    .box13 {
-        order: 14;
-    }
-
-    .box14 {
-        order: 13;
-    }
-
-    .box15 {
-        order: 15;
-    }
-
-    .box16 {
-        order: 16;
-    } */
-
     /* contact section */
 
     #contact h2 {
@@ -557,6 +524,13 @@ body {
     }
 
     #aboutMe p {
+        font-size: 1rem;
+    }
+
+    /* application links */
+
+    .mainWork p,
+    .workGrid p {
         font-size: 1rem;
     }
 }
