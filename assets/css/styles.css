@@ -19,16 +19,17 @@ body {
 /* start of header with nav */
 
 #topNav {
-    overflow: hidden;
     position: fixed;
+    z-index: 1;
     top: 0;
-    width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 1rem;
     background-color: var(--mainBlue);
     color: var(--lightBlue);
-    z-index: 1;
+
 }
 
 #nameLogo p:first-of-type {
@@ -48,18 +49,18 @@ body {
 }
 
 .navClick {
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--lightBlue);
-    font-size: 1.5rem;
 }
 
 .navClick:hover {
-    color: var(--green);
+    font-weight: bolder;
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-thickness: .2rem;
     text-decoration-color: var(--pink);
-    font-weight: bolder;
+    color: var(--green);
 }
 
 /* end of header with nav */
@@ -86,23 +87,22 @@ body {
 }
 
 #aboutMe h1 {
-    font-size: 3em;
     margin: auto 0;
+    font-size: 3em;
 }
 
 
 #aboutMe h2 {
+    margin-top: auto;
+    width: 50%;
     font-size: 2em;
     text-align: right;
-    width: 50%;
-    margin-top: auto;
 }
 
 #aboutMe p:first-of-type {
-    white-space: normal;
-    text-align: right;
     margin: auto 0;
-
+    text-align: right;
+    white-space: normal;
 }
 
 #aboutMe p {
@@ -111,8 +111,8 @@ body {
 
 #aboutMe img {
     width: 15%;
-    border-radius: 50%;
     border: .2em solid var(--mainBlue);
+    border-radius: 50%;
 }
 
 /* end of profile */
@@ -127,9 +127,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 3em 10em;
     background-color: var(--mainBlue);
     color: var(--lightBlue);
-    padding: 3em 10em;
 }
 
 .mainWork figure,
@@ -145,22 +145,21 @@ body {
     width: 100%;
 }
 
-/* TODO: figure out positioning title bars */
-
 .mainWork figure {
     position: relative;
 }
 
 .mainWork figcaption {
     position: absolute;
-    bottom: 1em;
-    width: 70%;
-    padding: .5em 1em;
-    background-color: var(--lightBlue);
-    color: var(--pink);
+    bottom: -.8rem;
+    left: 1.7rem;
+    width: 80%;
+    padding: .3em 1em;
+    font-size: 1.5em;
     font-weight: bolder;
     text-align: center;
-    font-size: 1.5em;
+    background-color: var(--lightBlue);
+    color: var(--pink);
 }
 
 .workGrid {
@@ -187,12 +186,13 @@ body {
 
 .workGrid figcaption {
     position: absolute;
-    top: 1em;
+    top: .2rem;
+    left: 3.2rem;
     width: 60%;
-    padding: .5em 1em;
+    padding: .7em 1em;
+    text-align: center;
     background-color: var(--mainBlue);
     color: var(--lightBlue);
-    text-align: center;
 }
 
 /* end of application links */
@@ -200,19 +200,19 @@ body {
 /* start of contact section */
 
 #contact {
-    background-color: var(--mainBlue);
     padding: 2em;
+    background-color: var(--mainBlue);
 
 }
 
 #contact h2 {
-    background-color: var(--lightBlue);
-    color: var(--mainBlue);
-    padding: 1em;
-    width: 80%;
     margin: 1em auto;
+    width: 80%;
+    padding: 1em;
     font-size: 3rem;
     text-align: center;
+    background-color: var(--lightBlue);
+    color: var(--mainBlue);
 }
 
 
@@ -221,16 +221,15 @@ body {
 }
 
 .contactIcon {
+    vertical-align: bottom;
+    margin-right: .5em;
     width: auto;
     height: 1em;
-    margin-right: .5em;
-    vertical-align: bottom;
 }
 
 .contactLink {
     margin: 1.5em;
     font-size: 3em;
-
 }
 
 .contactClick {
@@ -249,12 +248,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--pink);
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bolder;
     padding: 1.5rem;
+    font-size: 3rem;
     line-height: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--pink);
     color: var(--lightBlue);
 }
 
@@ -268,8 +267,8 @@ body {
 /* pink spans */
 
 .pink {
-    color: var(--pink);
     font-weight: bolder;
+    color: var(--pink);
 }
 
 /* start of media queries */
@@ -315,8 +314,8 @@ body {
     /* footer */
 
     #pageFooter {
-        font-size: 2rem;
         padding: 1rem;
+        font-size: 2rem;
     }
 
 }
@@ -419,8 +418,8 @@ body {
     }
 
     #aboutMe h1 {
-        font-size: 1.4rem;
         margin-bottom: 0;
+        font-size: 1.4rem;
     }
 
     #aboutMe h2 {
@@ -499,8 +498,8 @@ body {
     /* footer */
 
     #pageFooter {
-        font-size: 1rem;
         padding: 1em;
+        font-size: 1rem;
     }
 }
 
@@ -550,14 +549,14 @@ body {
     }
 
     #aboutMe h2 {
-        font-size: .9rem;
         align-self: flex-end;
+        font-size: .9rem;
     }
 
     #aboutMe img {
         align-self: center;
+        border: .2em solid var(--mainBlue);
         width: 50%;
-        border: .2em solid var(--mainBlue)
     }
 
     #aboutMe p {
@@ -575,10 +574,10 @@ body {
     .mainWork p,
     .workGrid figure,
     .workGrid p {
-        width: 80%;
         margin: 1rem auto;
-        text-align: center;
+        width: 80%;
         font-size: 1rem;
+        text-align: center;
     }
 
     .workGrid {
@@ -600,7 +599,7 @@ body {
         margin: .5em -.25em;
     }
 
-    .contactClick {
+    .hidden {
         display: none;
     }
 
