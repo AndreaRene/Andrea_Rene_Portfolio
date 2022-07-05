@@ -69,11 +69,11 @@ body {
     width: 30%;
     height: auto;
     white-space: nowrap;
-    margin-top: auto;
 }
 
 #aboutMe h1 {
     font-size: 3em;
+    margin: auto 0;
 }
 
 
@@ -81,11 +81,14 @@ body {
     font-size: 2em;
     text-align: right;
     width: 50%;
+    margin-top: auto;
 }
 
 #aboutMe p:first-of-type {
     white-space: normal;
     text-align: right;
+    margin: auto 0;
+
 }
 
 #aboutMe p {
@@ -107,12 +110,17 @@ section {
     justify-content: space-around;
     align-items: center;
     background-color: var(--mainBlue);
-    color: var(--lightBlue)
+    color: var(--lightBlue);
+    padding: 3em 10em;
 }
 
 .mainWork figure,
 .mainWork p {
-    width: 40%;
+    width: 35%;
+}
+
+.mainWork p {
+    font-size: 2rem;
 }
 
 .mainWork img {
@@ -130,7 +138,8 @@ section {
     width: 70%;
     padding: .5em 1em;
     background-color: var(--lightBlue);
-    color: var(--mainBlue);
+    color: var(--pink);
+    font-weight: bolder;
     text-align: center;
     font-size: 1.5em;
 }
@@ -252,7 +261,6 @@ footer a {
     }
 
     #aboutMe {
-        padding: 1rem;
         padding: 6rem 3rem .5rem;
     }
 
@@ -293,6 +301,27 @@ footer a {
         font-size: 2rem;
     }
 }
+
+/* 
+@media (min-width:570px) {
+
+    #aboutMe {
+        padding: 6rem 2rem .5rem;
+    }
+
+    #aboutMe h1 {
+        font-size: 2rem;
+    }
+
+    #aboutMe h2 {
+        font-size: 1.5rem;
+
+    }
+
+    #aboutMe p {
+        font-size: 1rem;
+    }
+} */
 
 @media (max-width: 480px) {
 

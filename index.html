@@ -15,6 +15,8 @@
 
 </head>
 
+<!-- TODO: Smile. You are enough. -->
+
 <body>
 
     <header>
@@ -42,16 +44,24 @@
             </p>
             <h2>Let's go build<br> someting <span class="pink">together</span>.</h2>
         </section>
+
+        <!-- TODO: Make this not HUGE on larger screens -->
+
         <section id="myWork" class="mainWork">
             <figure>
                 <img src="assets/imgs/roundblob.jpg" alt="sample alt text">
-                <figcaption>Application Title</figcaption>
+                <figcaption>Title</figcaption>
             </figure>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, rerum in dignissimos neque, culpa,
                 labore
                 maxime sit pariatur ea est ab ipsa. Consectetur quasi in dicta sit atque, tempora at!
             </p>
         </section>
+
+        <!-- TODO: Figure out figcaption positioning for application titles -->
+        <!-- TODO: Add placeholder links to placeholder images for applications -->
+        <!-- TODO: figure out how to reorder elements within flexboxes through media queries -->
+
         <section class="workGrid">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, rerum in dignissimos neque, culpa,
                 labore
@@ -110,24 +120,35 @@
                 labore
                 maxime sit pariatur ea est ab ipsa. Consectetur quasi in dicta sit atque, tempora at!</p>
         </section>
+
+        <!-- TODO: figure out how to have icons open links without adding them into the a tags so they don't disappear on smaller screens. make two a tags? seems sloppy-->
+        <!-- TODO: figure out how to make icons stack on top of links at mid-range screen sizes -->
+        <!-- TODO: make the cat and the IN not look janky on smaller screens -->
+        <!-- TODO: icon and text alignment -->
+
         <section id="contact">
             <h2>Connect with me! Let's do something <span class="pink">amazing</span>.</h2>
             <ul>
-                <li><img src="assets/imgs/GitHub-Mark-Light-32px.png"><a
-                        href="https://github.com/AndreaRene">github.com/AndreaRene</a></li>
-                <li><img src="assets/imgs/noun-email-4927198-F43D70.svg"><a
-                        href="mailto:andrea@interhact.net">andrea@interhact.net</a></li>
-                <li><img src="assets/imgs/noun-cell-phone-153290-F43D70.svg"><a href="tel:5129544257">512.954.4257</a>
+                <li class="contactLink"><img src="assets/imgs/noun-email-4927198-F43D70.svg"><a
+                        href="mailto:andrea@interhact.net" target="_" class="contactClick">andrea@interhact.net</a></li>
+                <li class="contactLink"><img src="assets/imgs/noun-cell-phone-153290-F43D70.svg"><a
+                        href="tel:5129544257" class="contactClick">512.954.4257</a></li>
+                <li class="contactLink"><img src="assets/imgs/GitHub-Mark-Light-32px.png"><a
+                        href="https://github.com/AndreaRene" target="_" class="contactClick">github.com/AndreaRene</a>
                 </li>
-
-                <li><img src="assets/imgs/In-Blue-Logo.png.original.png"><a
-                        href="https://www.linkedin.com/in/andrea-presto-a6a6b223a/">Find me on LinkedIn</a> </li>
+                <li class="contactLink"><img src="assets/imgs/In-Blue-Logo.png.original.png"><a
+                        href="https://www.linkedin.com/in/andrea-presto-a6a6b223a/" target="_" class="contactClick">Find
+                        me on
+                        LinkedIn</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <p>You made it to the bottom!<br>If you'd like, you can go back to the <a href="#top">top</a>.</p>
+    <!-- TODO: consider alternate footer notes -->
+
+    <footer id="mainFooter">
+        <p>You made it to the bottom!<br>If you'd like, you can go back to the <a href="#top"
+                class="footerClick">top</a>.</p>
     </footer>
 </body>
 
