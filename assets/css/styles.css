@@ -380,8 +380,8 @@ body {
     }
 }
 
-/* 
-@media (min-width:570px) {
+
+@media (min-width: 560px) and (max-width: 768px) {
 
     #aboutMe {
         padding: 6rem 2rem .5rem;
@@ -399,13 +399,12 @@ body {
     #aboutMe p {
         font-size: 1rem;
     }
-} */
+}
 
 @media (max-width: 480px) {
 
 
     #aboutMe {
-
         flex-direction: column;
     }
 
@@ -462,6 +461,11 @@ body {
 
     .contactClick {
         display: none;
+    }
+
+    .contactIcon {
+        margin: .7rem;
+        height: 2rem;
     }
 
     #pageFooter {
