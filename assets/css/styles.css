@@ -292,7 +292,7 @@ footer a {
     .workGrid figure,
     .workGrid p {
         width: 40%;
-        font-size: 1rem;
+        font-size: .7rem;
     }
 
     .box1 {
@@ -368,6 +368,10 @@ footer a {
     #contact li {
         /* display: block; */
         font-size: 2rem;
+    }
+
+    #mainFooter {
+        font-size: 1.5rem;
     }
 }
 
