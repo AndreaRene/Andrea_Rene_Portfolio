@@ -266,6 +266,7 @@ footer a {
 
     #aboutMe h1 {
         font-size: 1.4rem;
+        margin-bottom: 0;
     }
 
     #aboutMe h2 {
@@ -281,15 +282,83 @@ footer a {
         width: 30%;
     }
 
-    .mainWork figure,
-    .mainWork p {
-        width: 45%;
+    .mainWork {
+        padding: 1em;
     }
 
+
+    .mainWork figure,
+    .mainWork p,
     .workGrid figure,
     .workGrid p {
         width: 40%;
+        font-size: 1rem;
     }
+
+    .box1 {
+        order: 1;
+    }
+
+    .box2 {
+        order: 2;
+    }
+
+    .box3 {
+        order: 4;
+    }
+
+    .box4 {
+        order: 3;
+    }
+
+    .box5 {
+        order: 6;
+    }
+
+    .box6 {
+        order: 5;
+    }
+
+    .box7 {
+        order: 7;
+    }
+
+    .box8 {
+        order: 8;
+    }
+
+    .box9 {
+        order: 9;
+    }
+
+    .box10 {
+        order: 10;
+    }
+
+    .box11 {
+        order: 12;
+    }
+
+    .box12 {
+        order: 11;
+    }
+
+    .box13 {
+        order: 14;
+    }
+
+    .box14 {
+        order: 13;
+    }
+
+    .box15 {
+        order: 15;
+    }
+
+    .box16 {
+        order: 16;
+    }
+
 
     #contact h2 {
         font-size: 2rem;
@@ -352,19 +421,21 @@ footer a {
 
     .mainWork {
         flex-direction: column;
+        padding: .5rem;
+    }
+
+    .mainWork figure,
+    .mainWork p,
+    .workGrid figure,
+    .workGrid p {
+        width: 80%;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 1rem;
     }
 
     .workGrid {
         flex-direction: column;
-    }
-
-    .workGrid figure,
-    .workGrid p,
-    .mainWork figure,
-    .mainWork p {
-        width: 90%;
-        margin: 1rem auto;
-        text-align: center;
     }
 
     .workGrid p {
