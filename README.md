@@ -9,7 +9,7 @@ In this application I wanted to create a profile found [here](https://andrearene
 * A unique responsive design that accomodates screen sizes ranging from 320px to 1920px
 * Performant code that utilizes classes and ids in a manner that helps to accomodate potential growth
 
-#Technology Used
+## Technology Used
 
 * HTML
 * CSS
