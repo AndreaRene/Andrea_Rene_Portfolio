@@ -15,4 +15,4 @@ In this application I wanted to create a profile found [here](https://andrearene
 * CSS
 * Miro canvas platform for planning/wireframing (see screen capture below)
 
-![screen capture of my wireframing created on Miro](Module_2_Challenge\wireframing\wireframeCompleted.PNG )
+![screen capture of my wireframing created on Miro](Andrea_Rene_Portfolio\wireframing\wireframeCompleted.PNG )
