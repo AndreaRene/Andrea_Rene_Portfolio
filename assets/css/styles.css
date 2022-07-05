@@ -101,7 +101,7 @@ body {
     border: .2em solid var(--mainBlue);
 }
 
-section {
+.mainSection {
     padding: 3em .5em;
 }
 
@@ -134,7 +134,6 @@ section {
 .mainWork figcaption {
     position: absolute;
     bottom: 1em;
-    /* left: 1.5em; */
     width: 70%;
     padding: .5em 1em;
     background-color: var(--lightBlue);
@@ -192,28 +191,30 @@ section {
     text-align: center;
 }
 
-#contact img {
-    width: auto;
-    height: 1em;
-    margin-right: .5em;
-}
 
 #contact ul {
     text-align: center;
 }
 
-#contact li {
+.contactIcon {
+    width: auto;
+    height: 1em;
+    margin-right: .5em;
+    vertical-align: bottom;
+}
+
+.contactLink {
     margin: 1.5em;
     font-size: 3em;
+
 }
 
-#contact li a {
+.contactClick {
     text-decoration: none;
     color: var(--lightBlue);
-    margin-bottom: 1rem;
 }
 
-footer {
+#pageFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,7 +228,7 @@ footer {
     color: var(--lightBlue);
 }
 
-footer a {
+.footerClick {
     text-decoration: none;
     color: var(--green);
 }
@@ -250,14 +251,14 @@ footer a {
         align-items: center;
     }
 
+    #topNav ul {
+        margin: 1em auto .5em;
+        text-align: center;
+    }
+
     .navLink {
         display: block;
         padding: .2em .5em;
-    }
-
-    nav ul {
-        margin: 1em auto .5em;
-        text-align: center;
     }
 
     #aboutMe {
@@ -285,7 +286,6 @@ footer a {
     .mainWork {
         padding: 1em;
     }
-
 
     .mainWork figure,
     .mainWork p,
@@ -327,7 +327,9 @@ footer a {
         order: 8;
     }
 
-    .box9 {
+    /* Save in commit for future use. remove before deployment */
+
+    /* .box9 {
         order: 9;
     }
 
@@ -357,21 +359,24 @@ footer a {
 
     .box16 {
         order: 16;
-    }
+    } */
 
 
     #contact h2 {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
-    #contact img,
-    #contact li {
-        /* display: block; */
-        font-size: 2rem;
+    .contactLink {
+        font-size: 1rem;
     }
 
-    #mainFooter {
-        font-size: 1.5rem;
+    .contactIcon {
+        height: 1.5rem;
+    }
+
+    #pageFooter {
+        font-size: 1rem;
+        padding: 1em;
     }
 }
 
@@ -450,20 +455,20 @@ footer a {
         font-size: 1rem;
     }
 
-    #contact a {
-        display: none;
-    }
-
-    #contact li {
+    .contactLink {
         display: inline-block;
         margin: .5em -.25em;
     }
 
-    footer {
+    .contactClick {
+        display: none;
+    }
+
+    #pageFooter {
         padding: 1.5rem;
     }
 
-    footer p {
+    #pageFooter p {
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
